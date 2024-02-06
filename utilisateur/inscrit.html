@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>E-learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <body style="background-image: url('AA.jpg');"></body>
+    <link rel="icon" href="icon/papers.jpg" type="image/icon type">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.php"><img src="logo.jpg" alt="Logo E-learning"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="cours.html">Cours</a></li>
+                <li><a href="exercices.html">Exercices</a></li>
+                <li><a href="meeting.html">Meeting</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <style>
+            button {
+            /* Changer la couleur de fond du bouton */
+            background-color: #343336;
+            /* Changer la couleur du texte du bouton */
+            color: #eeeeee;
+            /* Ajouter une bordure arrondie au bouton */
+            border-radius: 10px;
+            /* Ajouter une bordure double au bouton */
+            border: 4px double #cccccc;
+            /* Ajouter du padding au bouton */
+            padding: 10px;
+            /* Changer la taille du texte du bouton */
+            font-size: 20px;
+          }
+          
+          /* Sélectionner le bouton OK au survol */
+          button:hover {
+            /* Changer la couleur de fond du bouton au survol */
+            background-color: green;
+          }
+        
+            </style>
+            
+            <style>
+                .field {
+            margin-bottom: 20px;
+        }
+        
+        .field label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .field input[type="submit"],
+        .field input[type="reset"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .field input[type="submit"]:hover,
+        .field input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        
+            </style>
+
+        <style>
+            select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select option {
+    padding: 10px;
+}
+
+        </style>
+        <h1>Inscription</h1>
+        <p>Veuillez remplir le formulaire suivant pour vous inscrire au meeting.</p>
+        <form action="insert.php" method="post">
+            <div class="field">
+                <label for="nom"><i class="fa fa-user"></i> Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="field">
+                <label for="prenom"><i class="fa fa-user"></i> Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div class="field">
+                <label for="email"><i class="fa fa-envelope"></i> Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+                <label for="password"><i class="fa fa-lock"></i> Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="field">
+                <label for="sujet"><i class="fa fa-comments"></i> Sujet du meeting :</label>
+                <select id="sujet" name="sujet" required>
+                    <option value="Java"><i class="fa fa-coffee"></i> Java</option>
+                    <option value="Python"><i class="fa fa-python"></i> Python</option>
+                    <option value="SQL"><i class="fa fa-database"></i> SQL</option>
+                    <option value="Html/CSS/JavaScript"><i class="fa fa-code"></i> Html/CSS/JavaScript</option>
+                    <option value="PHP"><i class="fa fa-code"></i> PHP</option>
+                    <option value="Spring boot"><i class="fa fa-leaf"></i> Spring boot</option>
+                    <option value="Django"><i class="fa fa-python"></i> Django</option>
+                    <option value="C/C++"><i class="fa fa-code"></i> C/C++</option>
+                    <option value="Language R"><i class="fa fa-chart-line"></i> Language R</option>
+                    <option value="Flutter"><i class="fa fa-butterfly"></i> Flutter</option>
+                </select>
+        </div>
+        <input type="submit" value=" Inscription" class="button fa">
+        <input type="reset" value="&#xf00d; Annuler" class="button fa" onclick="window.location.href='index.php'">
+        </form>
+    </main>
+    <footer>
+        <p>© 2023 E-learning. Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
+        <a href="mailto:abdellah.agnaou@um5r.ac.ma"><img src="email.png" alt="Email"></a>
+        <p>Email : abdellah.agnaou@um5r.ac.ma</p>
+        <p>Adresse : Faculté des sciences Rabat</p>
+        <p>Téléphone : +212 6 37 45 10 36</p>
+    </footer>
+</body>
+</html>

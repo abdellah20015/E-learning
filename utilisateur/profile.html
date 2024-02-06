@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>E-learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg" alt="Logo E-learning"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cours.html">Cours</a></li>
+                <li><a href="exercices.html">Exercices</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Profil</h1>
+        <p id="nom_prenom"></p>
+        <p id="email"></p>
+        <p id="password"></p>
+    </main>
+
+    <footer>
+        <p>© 2023 E-learning. Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
+        <a href="mailto:elearning@gmail.com"><img src="email.png" alt="Email"></a>
+        <p>Email : elearning@gmail.com</p>
+        <p>Adresse : 10 rue de la Liberté, Casablanca</p>
+        <p>Téléphone : +212 6 12 34 56 78</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Récupérer les données de l'utilisateur depuis la base de données
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "get_user.php", true);
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                try {
+                    // Convertir la réponse en objet JSON
+                    var user = JSON.parse(xhr.responseText);
+                    // Afficher le nom, le prénom, l'email et le mot de passe de l'utilisateur
+                    document.getElementById("nom_prenom").innerHTML = "Bonjour " + user.nom + " " + user.prenom;
+                    document.getElementById("email").innerHTML = "Email : " + user.email;
+                    document.getElementById("password").innerHTML = "Mot de passe : " + user.password;
+                } catch (error) {
+                    console.error("Erreur lors de l'analyse JSON :", error);
+                }
+            } else {
+                console.error("Erreur de requête. Statut :", xhr.status);
+            }
+        };
+        xhr.onerror = function() {
+            console.error("Erreur lors de la requête.");
+        };
+        xhr.send();
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>E-learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="icon/papers.jpg" type="image/icon type">
+    <body style="background-image: url('AA.jpg');"></body>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.php"><img src="logo.jpg" alt="Logo E-learning"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="cours.html">Cours</a></li>
+                <li><a href="exercices.html">Exercices</a></li>
+                <li><a href="meeting.html">Meeting</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <style>
+        .field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.field input[type="submit"],
+.field input[type="reset"] {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.field input[type="submit"]:hover,
+.field input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+    </style>
+
+    
+<main>
+    <h1>Inscription</h1>
+    <p>Pour accéder aux contenus de E-learning, vous devez vous inscrire avec votre nom, votre prénom, votre email et votre mot de passe.</p>
+    <form id="form" method="post" action="inscription.php">
+        <div class="field">
+            <label for="nom"><i class="fa fa-user"></i> Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="field">
+            <label for="prenom"><i class="fa fa-user"></i> Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </div>
+        <div class="field">
+            <label for="email"><i class="fa fa-envelope"></i> Email :</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+            <label for="password"><i class="fa fa-lock"></i> Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="field">
+            <label for="confirm"><i class="fa fa-lock"></i> Confirmation du mot de passe :</label>
+            <input type="password" id="confirm" name="confirm" required>
+        </div>
+        <div class="buttons">
+            <input type="submit" value=" Inscription" class="button fa">
+            <input type="reset" value="&#xf00d; Annuler" class="button fa" onclick="window.location.href='index.php'">
+        </div>
+    </form>
+</main>
+    <footer>
+        <p>© 2023 E-learning. Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
+        <a href="mailto:abdellah.agnaou@um5r.ac.ma"><img src="email.png" alt="Email"></a>
+        <p>Email : abdellah.agnaou@um5r.ac.ma</p>
+        <p>Adresse : Faculté des sciences Rabat</p>
+        <p>Téléphone : +212 6 37 45 10 36</p>
+    </footer>
+    <script src="main.js"></script>
+    <script type="text/javascript">
+        // Function to initialize the Google Translate Element
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'fr',
+                includedLanguages: 'ar,en,es,fr',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    
+        // Function to trigger translation
+        function translatePage(languageCode) {
+            var translateElement = new google.translate.TranslateElement({});
+            translateElement.getPageLanguage = function () { return 'fr'; }; // Set the source language
+    
+            // Trigger translation to the selected language
+            translateElement.showWidget({
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false,
+                multilanguagePage: true,
+                pageLanguage: languageCode
+            });
+        }
+    </script>
+</body>
+</html>
+

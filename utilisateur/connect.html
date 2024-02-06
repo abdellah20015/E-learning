@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>E-learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="icon" href="icon/email.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body style="background-image: url('AA.jpg');"></body>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.php"><img src="logo.jpg" alt="Logo E-learning"></a> <!-- Ajout du lien vers la page d'accueil -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="cours.html">Cours</a></li>
+                <li><a href="exercices.html">Exercices</a></li>
+                <li><a href="meeting.html">Meeting</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <style>
+            button {
+            /* Changer la couleur de fond du bouton */
+            background-color: #343336;
+            /* Changer la couleur du texte du bouton */
+            color: #eeeeee;
+            /* Ajouter une bordure arrondie au bouton */
+            border-radius: 10px;
+            /* Ajouter une bordure double au bouton */
+            border: 4px double #cccccc;
+            /* Ajouter du padding au bouton */
+            padding: 10px;
+            /* Changer la taille du texte du bouton */
+            font-size: 20px;
+          }
+          
+          /* Sélectionner le bouton OK au survol */
+          button:hover {
+            /* Changer la couleur de fond du bouton au survol */
+            background-color: green;
+          }
+        
+            </style>
+            
+            <style>
+                .field {
+            margin-bottom: 20px;
+        }
+        
+        .field label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .field input[type="submit"],
+        .field input[type="reset"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .field input[type="submit"]:hover,
+        .field input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        
+            </style>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f4;
+                }
+        
+                .container {
+                    width: 80%;
+                    margin: auto;
+                    overflow: hidden;
+                }
+        
+                #about {
+                    margin: 50px 0;
+                    padding: 20px;
+                    background-color: #fff;
+                    box-shadow: 0 0 10px #ddd;
+                }
+        
+                #about h1 {
+                    color: #333;
+                    font-size: 30px;
+                }
+        
+                #about p {
+                    line-height: 1.6;
+                }
+            </style>
+        
+        <style>
+            body.dark-mode {
+        background-color: #222;
+        color: #fff;
+        }
+        
+        .button, #mode-switch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        color: #fff;
+        background-color: #050505;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 15px;
+        transition: background-color 0.3s ease;
+        }
+        
+        .button:hover, #mode-switch:hover {
+        background-color: #161816;
+        }
+        
+        .button .fa, #mode-switch .fa {
+        margin-right: 5px;
+        }
+        
+        #mode-switch {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background-color: #000;
+        color: #fff;
+        }
+        
+        </style>
+        
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+            }
+            header {
+                background-color: #f5efef;
+                color: white;
+                padding: 10px;
+                text-align: center;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
+            h1 {
+                color: #333;
+            }
+            p {
+                color: #666;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+        <h1>Connexion</h1>
+        <p>Veuillez saisir votre adresse Gmail et votre mot de passe pour vous connecter.</p>
+        <form action="verif.php" method="post">
+            <div class="field">
+                <label for="email"><i class="fa fa-envelope"></i> Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+                <label for="password"><i class="fa fa-lock"></i> Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+        <div class="buttons">
+            <input type="submit" value="&#xf090; Connexion" class="button fa"> 
+
+            <input type="reset" value="&#xf00d; Annuler" class="button fa" onclick="window.location.href='index.php'">
+        </div>
+        </form>
+    </main>
+    <footer>
+        <p>© 2023 E-learning. Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
+        <a href="mailto:abdellah.agnaou@um5r.ac.ma"><img src="email.png" alt="Email"></a>
+        <p>Email : abdellah.agnaou@um5r.ac.ma</p>
+        <p>Adresse : Faculté des sciences Rabat</p>
+        <p>Téléphone : +212 6 37 45 10 36</p>
+    </footer>
+</body>
+</html>

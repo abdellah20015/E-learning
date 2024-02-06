@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="icon/R.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Administration</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+
+    <script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="logo.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Acceuil</a></li>
+				<li><a href="ajouter_cours.php">Ajouter cours</a></li>
+				<li><a href="ajouter_exercices.php">Ajouter exercices</a></li>
+				<li><a href="messages.php">Messages</a></li>
+				<li><a href="meet1.php">Users Meet</a></li>
+				<li><a href="meet.php">Meet</a></li>
+				<li><a href="users.php">Utilisateurs</a></li>
+				<li><a href="dash.php">Dashboard</a></li>
+				<li><a href="logout.php">Déconnexion</a></li>
+
+			</ul>
+
+			
+							
+
+
+            
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Salut Admin</p>
+				<h4>Ce site est réservé uniquement à l’administrateur.</h4>
+
+            </div>
+			<div class="svg-image">
+				<img src="extra/svg1.jpg" alt="svg">
+			</div>
+		</div>
+			
+        
+	</header>
+
+
+    
+
+
+
+
+
+
+    <!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">Environ</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="extra/e3.jpg">
+				</div>
+				<div class="side-text">
+					<h2>Que pensez-vous de nous ?</h2>
+					<p>L’éducation est le processus qui facilite l’apprentissage ou l’acquisition de connaissances, de compétences, de valeurs, de croyances et d’habitudes. Les méthodes pédagogiques comprennent l’enseignement, la formation, la narration, la discussion et la recherche dirigée. <br> Les sites Web éducatifs peuvent inclure des sites Web qui contiennent des jeux, des vidéos ou des ressources liées à des sujets qui agissent comme des outils pour améliorer l’apprentissage et compléter l’enseignement en classe. Ces sites Web contribuent à rendre le processus d’apprentissage divertissant et attrayant pour l’étudiant, en particulier dans le contexte d’aujourd’hui.</p>
+				</div>
+		</div>
+	</div>
+
+
+
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #5e5756, #8f8488); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">L’éducation est le passeport pour l’avenir, car demain appartient à ceux qui s’y préparent aujourd’hui. « C’est votre attitude, et non vos aptitudes, qui déterminera votre altitude. » « Si vous pensez que l’éducation coûte cher, essayez l’ignorance. » « La seule personne qui est éduquée est celle qui a appris à apprendre... et le changement.</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="logo.png" style="width: 100px; filter: invert(1);" id="logo">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="https://www.facebook.com/"><img src="icon\fb.png"></a>
+					<a href="https://www.instagram.com/"><img src="icon\insta.png"></a>
+					<a href="https://www.linkedin.com/"><img src="icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2023 Créer par Abdellah Agnaou</p>
+				<br><p><img src="icon/location.png"> Université Mohamed V<br>Faculté des sciences Rabat</p><br>
+				<p><img src="icon/phone.png"> +212 637-45-10-36<br><img src="icon/mail.png">&nbsp; abdellah.agnaou@um5r.ac.ma</p>
+			</div>
+
+			<div class="svg-image">
+				<img src="extra/svg1.jpg" alt="svg">
+			</div>
+			
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+@startuml
+actor utilisateur as u
+actor professeur as p
+actor admin as a
+participant site as s
+participant examen as e
+participant meet as m
+
+u -> s : accéder à la page
+s -> u : afficher la page
+u -> s : faire une inscription
+s -> u : confirmer l’inscription
+u -> s : se connecter avec email et mot de passe
+s -> u : authentifier l’utilisateur
+u -> s : accéder à la page d’examen
+s -> u : afficher la page d’examen
+u -> e : passer le test
+e -> u : évaluer le test
+u -> e : consulter la note
+u -> s : lire le cours, résumer et voir les vidéos
+s -> u : fournir les contenus
+u -> s : s’entraîner avec les exercices
+s -> u : corriger les exercices
+u -> s : se connecter avec gmail et mot de passe
+s -> u : authentifier l’utilisateur
+u -> m : accéder au meet
+m -> u : afficher le meet
+u -> p : communiquer avec le professeur
+p -> u : répondre à l’utilisateur
+u -> p : envoyer le message au professeur
+p -> u : recevoir le message
+u -> a : contacter l’admin du site
+a -> u : répondre à l’utilisateur
+@enduml

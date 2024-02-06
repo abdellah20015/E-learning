@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>E-learning - Examen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel=“stylesheet” href="style1.css">
+    <link rel=“stylesheet” href="sty.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="icon/q1.png" type="image/icon type">
+    <body style="background-image: url('AA.jpg');"></body>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.php"><img src="logo.jpg" alt="Logo E-learning"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="cours.html">Cours</a></li>
+                <li><a href="exercices.html">Exercices</a></li>
+                <li><a href="meeting.html">Meeting</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <style>
+        .question {
+            margin-bottom: 20px;
+        }
+        
+        .question p {
+            font-weight: bold;
+        }
+        
+        .options {
+            margin-left: 20px;
+        }
+        
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .options input[type="radio"] {
+            margin-right: 5px;
+        }
+        </style>
+   
+   <style>
+    form {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+    }
+    
+    input[type=text]:focus {
+        border: 3px solid #555;
+    }
+    
+    .blackButton {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+    
+    </style>
+    
+    
+        <h1>Examen</h1>
+        <h5>Vous avez 1h30 pour répondre aux questions suivantes. Bon courage !</h5>
+        <div id="timer"><i class="fa fa-clock-o"></i> 01:30:00</div>
+        <form id="form" method="post" action="examen.php">
+            <div class="question" id="q1">
+                    <p><i class="fa fa-question-circle"></i> Q1. Quelle est la commande SQL pour créer une table nommée “clients” avec les colonnes “id”, “nom” et “email” ?</p>
+                    <div class="options">
+                        <input type="radio" id="q1a" name="q1" value="a">
+                        <label for="q1a"><i class="fa fa-times"></i> A. CREATE TABLE clients (id INT, nom VARCHAR(50), email VARCHAR(50));</label><br>
+                        <input type="radio" id="q1b" name="q1" value="b">
+                        <label for="q1b"><i class="fa fa-times"></i> B. CREATE TABLE clients (id NUMBER, nom STRING(50), email STRING(50));</label><br>
+                        <input type="radio" id="q1c" name="q1" value="c">
+                        <label for="q1c"><i class="fa fa-times"></i> C. CREATE TABLE clients (id INTEGER, nom TEXT(50), email TEXT(50));</label><br>
+                        <input type="radio" id="q1d" name="q1" value="d">
+                        <label for="q1d"><i class="fa fa-times"></i> D. CREATE TABLE clients (id INT PRIMARY KEY, nom VARCHAR(50) NOT NULL, email VARCHAR(50) UNIQUE);</label>
+                    </div>
+                    <button type="button" class="button" id="next1"><i class="fa fa-arrow-right"></i> Next</button>                      
+            </div>
+            <div class="question" id="q2">
+                <p><p><i class="fa fa-question-circle"></i> Q2. Quelle est la syntaxe PHP pour afficher le contenu d’une variable nommée “$message” ?</p>
+                <div class="options">
+                    <input type="radio" id="q2a" name="q2" value="a">
+                    <label for="q2a"><i class="fa fa-times"></i>A. echo $message;</label><br>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b"><i class="fa fa-times"></i>B. print $message;</label><br>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c"><i class="fa fa-times"></i>C. echo "$message";</label><br>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d"><i class="fa fa-times"></i>D. Toutes les réponses sont correctes.</label>
+                </div>
+                <button type="button" class="button" id="next2"><i class="fa fa-arrow-right"></i> Next</button>
+            </div>
+            <div class="question" id="q3">
+                <p><p><i class="fa fa-question-circle"></i> Q3. Quelle est la propriété CSS pour changer la couleur du texte ?</p>
+                <div class="options">
+                    <input type="radio" id="q3a" name="q3" value="a">
+                    <label for="q3a"><i class="fa fa-times"></i>A. color</label><br>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b"><i class="fa fa-times"></i>B. font-color</label><br>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c"><i class="fa fa-times"></i>C. text-color</label><br>
+                    <input type="radio" id="q3d" name="q3" value="d">
+                    <label for="q3d"><i class="fa fa-times"></i>D. text-style</label>
+                </div>
+                <button type="button" class="button" id="next3"><i class="fa fa-arrow-right"></i> Next</button>
+            </div>
+            <div class="question" id="q4">
+                <p><p><i class="fa fa-question-circle"></i> Q4. Quelle est la méthode JS pour ajouter un élément à la fin d’un tableau ?</p>
+                <div class="options">
+                    <input type="radio" id="q4a" name="q4" value="a">
+                    <label for="q4a"><i class="fa fa-times"></i>A. push()</label><br>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b"><i class="fa fa-times"></i>B. append()</label><br>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c"><i class="fa fa-times"></i>C. insert()</label><br>
+                    <input type="radio" id="q4d" name="q4" value="d">
+                    <label for="q4d"><i class="fa fa-times"></i>D. add()</label>
+                </div>
+                <button type="button" class="button" id="next4"><i class="fa fa-arrow-right"></i> Next</button>
+            </div>
+            <div class="question" id="q5">
+                <p><p><i class="fa fa-question-circle"></i> Q5. Quelle est la balise HTML pour créer un lien hypertexte ?</p>
+                <div class="options">
+                    <input type="radio" id="q5a" name="q5" value="a">
+                    <label for="q5a"><i class="fa fa-times"></i>A. &lt;a&gt;</label><br>
+                    <input type="radio" id="q5b" name="q5" value="b">
+                    <label for="q5b"><i class="fa fa-times"></i>B. &lt;link&gt;</label><br>
+                    <input type="radio" id="q5c" name="q5" value="c">
+                    <label for="q5c"><i class="fa fa-times"></i>C. &lt;href&gt;</label><br>
+                    <input type="radio" id="q5d" name="q5" value="d">
+                    <label for="q5d"><i class="fa fa-times"></i>D. &lt;url&gt;</label>
+                </div>
+                <button type="button" class="button" id="next5"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q6">
+                    <p><p><i class="fa fa-question-circle"></i> Q6. Quelle est la différence entre les méthodes GET et POST dans une requête HTTP ?</p>
+                    <div class="options">
+                        <input type="radio" id="q6a" name="q6" value="a">
+                        <label for="q6a"><i class="fa fa-times"></i>A. La méthode GET envoie les données dans l'URL, tandis que la méthode POST les envoie dans le corps de la requête.</label><br>
+                        <input type="radio" id="q6b" name="q6" value="b">
+                        <label for="q6b"><i class="fa fa-times"></i>B. La méthode GET est utilisée pour récupérer des données, tandis que la méthode POST est utilisée pour envoyer des données.</label><br>
+                        <input type="radio" id="q6c" name="q6" value="c">
+                        <label for="q6c"><i class="fa fa-times"></i>C. La méthode GET est plus rapide et plus sûre que la méthode POST, qui est plus lente et moins sûre.</label><br>
+                        <input type="radio" id="q6d" name="q6" value="d">
+                        <label for="q6d"><i class="fa fa-times"></i>D. La méthode GET et la méthode POST sont équivalentes, il n'y a pas de différence entre elles.</label>
+                    </div>
+                    <button type="button" class="button" id="next6"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q7">
+                    <p><p><i class="fa fa-question-circle"></i> Q7. Quelle est la syntaxe correcte pour déclarer une variable en Java ?</p>
+                    <div class="options">
+                        <input type="radio" id="q7a" name="q7" value="a">
+                        <label for="q7a"><i class="fa fa-times"></i>A. var nom = "Alice";</label><br>
+                        <input type="radio" id="q7b" name="q7" value="b">
+                        <label for="q7b"><i class="fa fa-times"></i>B. String nom = "Alice";</label><br>
+                        <input type="radio" id="q7c" name="q7" value="c">
+                        <label for="q7c"><i class="fa fa-times"></i>C. nom = "Alice";</label><br>
+                        <input type="radio" id="q7d" name="q7" value="d">
+                        <label for="q7d"><i class="fa fa-times"></i>D. String nom := "Alice";</label>
+                    </div>
+                    <button type="button" class="button" id="next7"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q8">
+                    <p><p><i class="fa fa-question-circle"></i> Q8. Quelle est la différence entre les mots-clés static et final en Java ?</p>
+                    <div class="options">
+                        <input type="radio" id="q8a" name="q8" value="a">
+                        <label for="q8a"><i class="fa fa-times"></i>A. Le mot-clé static indique qu'une variable ou une méthode appartient à la classe, tandis que le mot-clé final indique qu'une variable ou une méthode ne peut pas être modifiée.</label><br>
+                        <input type="radio" id="q8b" name="q8" value="b">
+                        <label for="q8b"><i class="fa fa-times"></i>B. Le mot-clé static indique qu'une variable ou une méthode est partagée entre tous les objets de la classe, tandis que le mot-clé final indique qu'une variable ou une méthode est unique à chaque objet de la classe.</label><br>
+                        <input type="radio" id="q8c" name="q8" value="c">
+                        <label for="q8c"><i class="fa fa-times"></i>C. Le mot-clé static indique qu'une variable ou une méthode est constante, tandis que le mot-clé final indique qu'une variable ou une méthode est variable.</label><br>
+                        <input type="radio" id="q8d" name="q8" value="d">
+                        <label for="q8d"><i class="fa fa-times"></i>D. Le mot-clé static indique qu'une variable ou une méthode est locale à une méthode, tandis que le mot-clé final indique qu'une variable ou une méthode est globale à la classe.</label>
+                    </div>
+                    <button type="button" class="button" id="next8"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q9">
+                    <p><p><i class="fa fa-question-circle"></i> Q9. Quelle est la syntaxe correcte pour définir une fonction en Python ?</p>
+                    <div class="options">
+                        <input type="radio" id="q9a" name="q9" value="a">
+                        <label for="q9a"><i class="fa fa-times"></i>A. function somme(a, b): return a + b</label><br>
+                        <input type="radio" id="q9b" name="q9" value="b">
+                        <label for="q9b"><i class="fa fa-times"></i>B. def somme(a, b): return a + b</label><br>
+                        <input type="radio" id="q9c" name="q9" value="c">
+                        <label for="q9c"><i class="fa fa-times"></i>C. somme(a, b) -> a + b</label><br>
+                        <input type="radio" id="q9d" name="q9" value="d">
+                        <label for="q9d"><i class="fa fa-times"></i>D. somme = lambda a, b: a + b</label>
+                    </div>
+                    <button type="button" class="button" id="next9"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q10">
+                    <p><p><i class="fa fa-question-circle"></i> Q10. Quelle est la différence entre les listes et les tuples en Python ?</p>
+                    <div class="options">
+                        <input type="radio" id="q10a" name="q10" value="a">
+                        <label for="q10a"><i class="fa fa-times"></i>A. Les listes sont mutables, tandis que les tuples sont immutables.</label><br>
+                        <input type="radio" id="q10b" name="q10" value="b">
+                        <label for="q10b"><i class="fa fa-times"></i>B. Les listes sont ordonnées, tandis que les tuples sont non ordonnés.</label><br>
+                        <input type="radio" id="q10c" name="q10" value="c">
+                        <label for="q10c"><i class="fa fa-times"></i>C. Les listes sont indexées par des entiers, tandis que les tuples sont indexés par des clés.</label><br>
+                        <input type="radio" id="q10d" name="q10" value="d">
+                        <label for="q10d"><i class="fa fa-times"></i>D. Les listes sont représentées par des crochets, tandis que les tuples sont représentés par des parenthèses.</label>
+                    </div>
+                    <button type="button" class="button" id="next10"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q11">
+                    <p><p><i class="fa fa-question-circle"></i> Q11. Quelle est la syntaxe correcte pour créer un modèle nommé “Article” avec les champs “titre”, “contenu” et “date” en Django ?</p>
+                    <div class="options">
+                        <input type="radio" id="q11a" name="q11" value="a">
+                        <label for="q11a"><i class="fa fa-times"></i>A. class Article(models.Model): titre = models.CharField(max_length=100) contenu = models.TextField() date = models.DateTimeField()</label><br>
+                        <input type="radio" id="q11b" name="q11" value="b">
+                        <label for="q11b"><i class="fa fa-times"></i>B. model Article(titre: String, contenu: String, date: Date)</label><br>
+                        <input type="radio" id="q11c" name="q11" value="c">
+                        <label for="q11c"><i class="fa fa-times"></i>C. Article = {titre: String, contenu: String, date: Date}</label><br>
+                        <input type="radio" id="q11d" name="q11" value="d">
+                        <label for="q11d"><i class="fa fa-times"></i>D. Article(titre, contenu, date) = (String, String, Date)</label>
+                    </div>
+                    <button type="button" class="button" id="next11"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q12">
+                    <p><p><i class="fa fa-question-circle"></i> Q12. Quelle est la différence entre les vues basées sur les fonctions et les vues basées sur les classes en Django ?</p>
+                    <div class="options">
+                        <input type="radio" id="q12a" name="q12" value="a">
+                        <label for="q12a"><i class="fa fa-times"></i>A. Les vues basées sur les fonctions sont plus simples et plus flexibles, tandis que les vues basées sur les classes sont plus structurées et plus réutilisables.</label><br>
+                        <input type="radio" id="q12b" name="q12" value="b">
+                        <label for="q12b"><i class="fa fa-times"></i>B. Les vues basées sur les fonctions sont plus rapides et plus sécurisées, tandis que les vues basées sur les classes sont plus lentes et moins sécurisées.</label><br>
+                        <input type="radio" id="q12c" name="q12" value="c">
+                        <label for="q12c"><i class="fa fa-times"></i>C. Les vues basées sur les fonctions sont plus adaptées aux requêtes GET, tandis que les vues basées sur les classes sont plus adaptées aux requêtes POST.</label><br>
+                        <input type="radio" id="q12d" name="q12" value="d">
+                        <label for="q12d"><i class="fa fa-times"></i>D. Les vues basées sur les fonctions et les vues basées sur les classes sont équivalentes, il n'y a pas de différence entre elles.</label>
+                    </div>
+                    <button type="button" class="button" id="next12"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q13">
+                    <p><p><i class="fa fa-question-circle"></i> Q13. Quelle est la syntaxe correcte pour déclarer une variable en C/C++ ?</p>
+                    <div class="options">
+                        <input type="radio" id="q13a" name="q13" value="a">
+                        <label for="q13a"><i class="fa fa-times"></i>A. int x = 10;</label><br>
+                        <input type="radio" id="q13b" name="q13" value="b">
+                        <label for="q13b"><i class="fa fa-times"></i>B. x = 10;</label><br>
+                        <input type="radio" id="q13c" name="q13" value="c">
+                        <label for="q13c"><i class="fa fa-times"></i>C. var x = 10;</label><br>
+                        <input type="radio" id="q13d" name="q13" value="d">
+                        <label for="q13d"><i class="fa fa-times"></i>D. x := 10;</label>
+                    </div>
+                    <button type="button" class="button" id="next13"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q14">
+                    <p><p><i class="fa fa-question-circle"></i> Q14. Quelle est la différence entre les pointeurs et les références en C/C++ ?</p>
+                    <div class="options">
+                        <input type="radio" id="q14a" name="q14" value="a">
+                        <label for="q14a"><i class="fa fa-times"></i>A. Les pointeurs sont des variables qui stockent l'adresse d'une autre variable, tandis que les références sont des alias pour une autre variable.</label><br>
+                        <input type="radio" id="q14b" name="q14" value="b">
+                        <label for="q14b"><i class="fa fa-times"></i>B. Les pointeurs sont des types de données primitifs, tandis que les références sont des types de données dérivés.</label><br>
+                        <input type="radio" id="q14c" name="q14" value="c">
+                        <label for="q14c"><i class="fa fa-times"></i>C. Les pointeurs peuvent être nuls, tandis que les références ne peuvent pas être nulles.</label><br>
+                        <input type="radio" id="q14d" name="q14" value="d">
+                        <label for="q14d"><i class="fa fa-times"></i>D. Les pointeurs peuvent être modifiés, tandis que les références ne peuvent pas être modifiées.</label>
+                    </div>
+                    <button type="button" class="button" id="next14"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q15">
+                    <p><p><i class="fa fa-question-circle"></i> Q15. Quelle est la syntaxe correcte pour créer un widget nommé “HelloWorld” qui affiche le texte “Hello, world!” en Flutter ?</p>
+                    <div class="options">
+                        <input type="radio" id="q15a" name="q15" value="a">
+                        <label for="q15a"><i class="fa fa-times"></i>A. class HelloWorld extends Widget { render() { return Text("Hello, world!"); }}</label><br>
+                        <input type="radio" id="q15b" name="q15" value="b">
+                        <label for="q15b"><i class="fa fa-times"></i>B. class HelloWorld extends StatelessWidget { build(context) { return Text("Hello, world!"); }}</label><br>
+                        <input type="radio" id="q15c" name="q15" value="c">
+                        <label for="q15c"><i class="fa fa-times"></i>C. class HelloWorld implements Widget { display() { return Text("Hello, world!"); }}</label><br>
+                        <input type="radio" id="q15d" name="q15" value="d">
+                        <label for="q15d"><i class="fa fa-times"></i>D. class HelloWorld inherits Widget { show() { return Text("Hello, world!"); }}</label>
+                    </div>
+                    <button type="button" class="button" id="next15"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q16">
+                    <p><p><i class="fa fa-question-circle"></i> Q16. Quelle est la différence entre les widgets stateful et stateless en Flutter ?</p>
+                    <div class="options">
+                        <input type="radio" id="q16a" name="q16" value="a">
+                        <label for="q16a"><i class="fa fa-times"></i>A. Les widgets stateful sont des widgets qui peuvent changer leur apparence en fonction de l'état interne, tandis que les widgets stateless sont des widgets qui ne dépendent pas de l'état interne.</label><br>
+                        <input type="radio" id="q16b" name="q16" value="b">
+                        <label for="q16b"><i class="fa fa-times"></i>B. Les widgets stateful sont des widgets qui peuvent être modifiés par l'utilisateur, tandis que les widgets stateless sont des widgets qui ne peuvent pas être modifiés par l'utilisateur.</label><br>
+                        <input type="radio" id="q16c" name="q16" value="c">
+                        <label for="q16c"><i class="fa fa-times"></i>C. Les widgets stateful sont des widgets qui peuvent être réutilisés dans d'autres parties de l'application, tandis que les widgets stateless sont des widgets qui sont spécifiques à une partie de l'application.</label><br>
+                        <input type="radio" id="q16d" name="q16" value="d">
+                        <label for="q16d"><i class="fa fa-times"></i>D. Les widgets stateful sont des widgets qui peuvent être animés, tandis que les widgets stateless sont des widgets qui ne peuvent pas être animés.</label>
+                    </div>
+                    <button type="button" class="button" id="next16"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q17">
+                    <p><p><i class="fa fa-question-circle"></i> Q17. Quelle est la syntaxe correcte pour créer un vecteur nommé “v” avec les éléments 1, 2 et 3 en R ?</p>
+                    <div class="options">
+                        <input type="radio" id="q17a" name="q17" value="a">
+                        <label for="q17a"><i class="fa fa-times"></i>A. v <- c(1, 2, 3)</label><br>
+                        <input type="radio" id="q17b" name="q17" value="b">
+                        <label for="q17b"><i class="fa fa-times"></i>B. v = [1, 2, 3]</label><br>
+                        <input type="radio" id="q17c" name="q17" value="c">
+                        <label for="q17c"><i class="fa fa-times"></i>C. v = vector(1, 2, 3)</label><br>
+                        <input type="radio" id="q17d" name="q17" value="d">
+                        <label for="q17d"><i class="fa fa-times"></i>D. v = c(1, 2, 3)</label>
+                    </div>
+                    <button type="button" class="button" id="next17"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q18">
+                    <p><p><i class="fa fa-question-circle"></i> Q18. Quelle est la différence entre les fonctions apply et lapply en R ?</p>
+                    <div class="options">
+                        <input type="radio" id="q18a" name="q18" value="a">
+                        <label for="q18a"><i class="fa fa-times"></i>A. La fonction apply applique une fonction à chaque élément d'une liste, tandis que la fonction lapply applique une fonction à chaque élément d'un vecteur.</label><br>
+                        <input type="radio" id="q18b" name="q18" value="b">
+                        <label for="q18b"><i class="fa fa-times"></i>B. La fonction apply applique une fonction à chaque ligne ou colonne d'une matrice, tandis que la fonction lapply applique une fonction à chaque élément d'une liste.</label><br>
+                        <input type="radio" id="q18c" name="q18" value="c">
+                        <label for="q18c"><i class="fa fa-times"></i>C. La fonction apply applique une fonction à chaque élément d'un vecteur, tandis que la fonction lapply applique une fonction à chaque élément d'un facteur.</label><br>
+                        <input type="radio" id="q18d" name="q18" value="d">
+                        <label for="q18d"><i class="fa fa-times"></i>D. La fonction apply applique une fonction à chaque élément d'un facteur, tandis que la fonction lapply applique une fonction à chaque ligne ou colonne d'une matrice.</label>
+                    </div>
+                    <button type="button" class="button" id="next18"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+
+                <div class="question" id="q19">
+                    <p><p><i class="fa fa-question-circle"></i> Q19. Quelle est la syntaxe correcte pour créer un graphique à barres avec les données suivantes en R ?</p>
+                    <div class="options">
+                        <input type="radio" id="q19a" name="q19" value="a">
+                        <label for="q19a"><i class="fa fa-times"></i>A. barplot(c(10, 20, 30), names.arg = c("A", "B", "C"))</label><br>
+                        <input type="radio" id="q19b" name="q19" value="b">
+                        <label for="q19b"><i class="fa fa-times"></i>B. barplot(x = c(10, 20, 30), y = c("A", "B", "C"))</label><br>
+                        <input type="radio" id="q19c" name="q19" value="c">
+                        <label for="q19c"><i class="fa fa-times"></i>C. barplot(data = c(10, 20, 30), labels = c("A", "B", "C"))</label><br>
+                        <input type="radio" id="q19d" name="q19" value="d">
+                        <label for="q19d"><i class="fa fa-times"></i>D. barplot(height = c(10, 20, 30), names = c("A", "B", "C"))</label>
+                    </div>
+                    <button type="button" class="button" id="next19"><i class="fa fa-arrow-right"></i> Next</button>
+                </div>
+            
+                <div class="question" id="q20">
+                    <p><p><i class="fa fa-question-circle"></i> Q20. Quelle est la commande SQL pour créer une table nommée “clients” avec les colonnes “id”, “nom” et “email” ?</p>
+                    <div class="options">
+                        <input type="radio" id="q20a" name="q20" value="a">
+                        <label for="q20a"><i class="fa fa-times"></i>A. CREATE TABLE clients (id INT, nom VARCHAR(50), email VARCHAR(50));</label><br>
+                        <input type="radio" id="q20b" name="q20" value="b">
+                        <label for="q20b"><i class="fa fa-times"></i>B. CREATE TABLE clients (id NUMBER, nom STRING(50), email STRING(50));</label><br>
+                        <input type="radio" id="q20c" name="q20" value="c">
+                        <label for="q20c"><i class="fa fa-times"></i>C. CREATE TABLE clients (id INTEGER, nom TEXT(50), email TEXT(50));</label><br>
+                        <input type="radio" id="q20d" name="q20" value="d">
+                        <label for="q20d"><i class="fa fa-times"></i>D. CREATE TABLE clients (id INT PRIMARY KEY, nom VARCHAR(50) NOT NULL, email VARCHAR(50) UNIQUE);</label>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="button"><i class="fa fa-paper-plane"></i> Envoyer</button>
+                <input type="reset" value="&#xf00d; Annuler" class="button fa" onclick="window.location.href='index.php'">
+            </div>
+            
+              </form>
+              
+
+              <div id="certificat" style="display: none;">
+                <h1><i class="fa fa-trophy"></i> Résultat</h1>
+                <p><i class="fa fa-check-circle"></i> Félicitations ! Vous avez réussi l'examen de programmation web avec une note de <span id="note"></span>%.</p>
+                
+                <form method="post" action="certificat.php">
+                    <label for="nom"><i class="fa fa-user"></i> Nom:</label><br>
+                    <input type="text" id="nom" name="nom"><br>
+                    <label for="prenom"><i class="fa fa-user"></i> Prénom:</label><br>
+                    <input type="text" id="prenom" name="prenom"><br>
+                    <label for="module"><i class="fa fa-cogs"></i> Module:</label><br>
+                    <input type="text" id="module" name="module"><br>
+                    <label for="note"><i class="fa fa-star"></i> Note:</label><br>
+                    <input type="text" id="note" name="note"><br>
+                    <button type="submit" class="blackButton"><i class="fa fa-paper-plane"></i> Submit</button>
+
+                </form>
+
+            </div>
+    </main>
+    <footer>
+        <p>© 2023 E-learning. Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
+        <a href="mailto:abdellah.agnaou@um5r.ac.ma"><img src="email.png" alt="Email"></a>
+        <p>Email : abdellah.agnaou@um5r.ac.ma</p>
+        <p>Adresse : Faculté des sciences Rabat</p>
+        <p>Téléphone : +212 6 37 45 10 36</p>
+    </footer>
+</body>
+    <script src="main.js"></script>
+    <script src="examen.js"></script>
+</body>
+</html>
+

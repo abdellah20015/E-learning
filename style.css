@@ -1,0 +1,309 @@
+/* Réinitialisation des marges, paddings et boîte de modèle */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Style du logo */
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Style de la barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Style de la section principale */
+main {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+main h1 {
+    color: #333333;
+    font-size: 36px;
+}
+
+main p {
+    color: #666666;
+    font-size: 18px;
+}
+
+/* Style des boutons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button {
+    color: white;
+    background-color: #333333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #666666;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style du diaporama des images des étudiants */
+.slider {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+          .slide.active {
+            opacity: 1;
+          }
+          .controls {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        
+
+/* Style des éléments sociaux */
+.social {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.icon:hover img {
+    filter: invert(1);
+}
+
+/* Style des éléments de contact */
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+.contact span {
+    color: green;
+    font-weight: bold;
+}
+
+/* Style des éléments de menu actifs */
+nav ul li a.active {
+    color: yellow;
+    font-weight: bold;
+}
+
+img {
+    width: 40px;
+    margin: 0.25px;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Style du pied de page */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style du diaporama des images des étudiants */
+.slider {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+          .slide.active {
+            opacity: 1;
+          }
+          .controls {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        button {
+            border: none;
+            background: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            margin: 0 10px;
+          }
+
+/* Style des éléments sociaux */
+.social {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.icon:hover img {
+    filter: invert(1);
+}
+
+/* Style des éléments de contact */
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+.contact span {
+    color: green;
+    font-weight: bold;
+}
+
+/* Style des éléments de menu actifs */
+nav ul li a.active {
+    color: yellow;
+    font-weight: bold;
+}
+
+img {
+    width: 40px;
+    margin: 0.25px;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+
+
+  
+
+
+
+

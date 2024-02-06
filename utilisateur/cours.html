@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cours</title>
+    <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="icon" href="cours.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body style="background-image: url('AA.jpg');"></body>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.php"><img src="logo.jpg" alt="Logo E-learning"></a> <!-- Ajout du lien vers la page d'accueil -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php"><i class="fa fa-home"></i> Accueil</a></li>
+                <li><a href="cours.html"><i class="fa fa-book"></i> Cours</a></li>
+                <li><a href="exercices.html"><i class="fa fa-pencil"></i> Exercices</a></li>
+                <li><a href="meeting.html"><i class="fa fa-users"></i> Meeting</a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+                
+            </ul>
+        </nav>
+        <style>
+            .recherche {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.recherche form {
+    display: flex;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.recherche input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.recherche button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.recherche button:hover {
+    background-color: #bbb;
+}
+
+.recherche button i {
+    font-size: 18px;
+}
+
+        </style>
+        <div class="recherche">
+            <form action="recherche.php" method="get">
+                <input type="text" name="q" placeholder="Rechercher un cours...">
+                <button type="submit"><i class="fa fa-search"></i> Rechercher</button>
+            </form>
+        </div>
+        
+    </header>
+    <main>
+        <h1>Cours</h1>
+        <p>Voici la liste des cours disponibles sur E-learning.</p>
+        <style>
+            body.dark-mode {
+        background-color: #222;
+        color: #fff;
+    }
+    
+    .button, #mode-switch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        color: #fff;
+        background-color: #050505;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 15px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .button:hover, #mode-switch:hover {
+        background-color: #161816;
+    }
+    
+    .button .fa, #mode-switch .fa {
+        margin-right: 5px;
+    }
+    
+    #mode-switch {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background-color: #000;
+        color: #fff;
+    }
+    
+        </style>
+        <style>
+.cours {
+    box-sizing: border-box;
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+    background-color: rgb(246, 246, 246);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.cours p {
+    color: rgb(54, 2, 138);
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.button-video {
+    background-color: #333333; /* gris foncé pour la vidéo */
+}
+
+.button-pdf {
+    background-color: #4d4d4d; /* gris moyen pour le PDF */
+}
+
+.button-resume {
+    background-color: #666666; /* gris pour le résumé */
+}
+
+.button-description {
+    background-color: #808080; /* gris clair pour la description de la vidéo */
+}
+
+.button-video, .button-pdf, .button-resume, .button-description {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-video:hover, .button-pdf:hover, .button-resume:hover, .button-description:hover {
+    background-color: #111111; /* noir pour le survol */
+}
+
+
+.cours {
+    box-sizing: border-box;
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+    background-color: rgb(246, 246, 246);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.cours p {
+    color: rgb(54, 2, 138);
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.button-video, .button-pdf, .button-resume, .button-description {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-video {
+    background-color: #333333; /* gris foncé pour la vidéo */
+}
+
+.button-pdf {
+    background-color: #4d4d4d; /* gris moyen pour le PDF */
+}
+
+.button-resume {
+    background-color: #666666; /* gris pour le résumé */
+}
+
+.button-description {
+    background-color: #808080; /* gris clair pour la description de la vidéo */
+}
+
+.button-video:hover, .button-pdf:hover, .button-resume:hover, .button-description:hover {
+    background-color: #111111; /* noir pour le survol */
+}
+
+
+        </style>
+
+
+
+<div class="cours">
+    <p>Cours 1 : Introduction à la programmation</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours1_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours1_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours1_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours1_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+
+<div class="cours">
+    <p>Cours 2 : Les bases du HTML et du CSS</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours2_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours2_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours2_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours2_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+
+<div class="cours">
+    <p>Cours 3 : Les bases du JavaScript et du PHP</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours3_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours3_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours3_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours3_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+
+<div class="cours">
+    <p>Cours 4 : Les bases du MySQL</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours4_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours4_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours4_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours4_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+
+<div class="cours">
+    <p>Cours 5 : Spring Boot</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours5_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours5_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours5_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours5_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+
+<div class="cours">
+    <p>Cours 6 : Python</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours6_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours6_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours6_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours6_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+
+<div class="cours">
+    <p>Cours 7 : Java</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours7_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours7_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours7_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours7_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+
+<div class="cours">
+    <p>Cours 8 : Django</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours8_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours8_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours8_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours8_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+<div class="cours">
+    <p>Cours 9 : Flutter et Application mobile</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours9_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours9_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours9_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours9_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+
+<div class="cours">
+    <p>Cours 10 : Language R</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours10_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours10_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours10_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours10_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+<div class="cours">
+    <p>Cours 11 : Language C++</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours11_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours11_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours11_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours11_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+<div class="cours">
+    <p>Cours 12 : Language C</p>
+    <ul class="menu">
+        <li><button onclick="window.open('cours12_video.html', '_blank')" class="button-video"><i class="fa fa-video-camera"></i> Ouvrir la vidéo</button></li>
+        <li><button onclick="window.open('cours12_pdf.html', '_blank')" class="button-pdf"><i class="fa fa-file-pdf-o"></i> Ouvrir le PDF</button></li>
+        <li><button onclick="window.open('cours12_resume.html', '_blank')" class="button-resume"><i class="fa fa-file-text-o"></i> Ouvrir le résumé</button></li>
+        <li><button onclick="window.open('cours12_description.html', '_blank')" class="button-description"><i class="fa fa-info-circle"></i> Ouvrir la description de vidéo</button></li>
+    </ul>
+</div>
+
+
+
+
+        
+            
+
+
+            
+
+            
+
+            
+
+            
+
+            
+
+
+            
+            
+              
+              
+
+
+            
+
+            
+
+            
+
+            
+            
+
+            
+          
+    </main>
+    <footer>
+        <p>© 2023 E-learning. Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a> <!-- Ajout de l'icône de LinkedIn -->
+        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a> <!-- Ajout de l'icône de Facebook -->
+        <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a> <!-- Ajout de l'icône de Instagram -->
+        <a href="mailto:abdellah.agnaou@um5r.ac.ma"><img src="email.png" alt="Email"></a> <!-- Ajout de l'icône de Email -->
+        <p><i class="fa fa-envelope"></i> Email : abdellah.agnaou@um5r.ac.ma</p> <!-- Ajout de l'adresse email -->
+        <p><i class="fa fa-map-marker"></i> Adresse : Faculté des sciences Rabat</p> <!-- Ajout de l'adresse -->
+        <p><i class="fa fa-phone"></i> Téléphone : +212 6 37 45 10 36</p> <!-- Ajout du numéro de téléphone -->
+    </footer>
+
+    <script>
+        // Fonction pour basculer entre le mode sombre et le mode jour
+        function switchMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode"); // Ajoute ou supprime la classe dark-mode
+            var button = document.getElementById("mode-switch");
+    
+            // Stocke l'état actuel du mode sombre dans le stockage local
+            localStorage.setItem("darkMode", element.classList.contains("dark-mode"));
+    
+            // Met à jour le texte du bouton en fonction du mode sombre
+            if (element.classList.contains("dark-mode")) {
+                button.innerHTML = '<i class="fa fa-sun-o"></i> Day Mode';
+            } else {
+                button.innerHTML = '<i class="fa fa-moon-o"></i> Night Mode';
+            }
+        }
+    
+        // Fonction pour charger l'état du mode sombre au chargement de la page
+        window.onload = function () {
+            var darkMode = localStorage.getItem("darkMode");
+            var element = document.body;
+            var button = document.getElementById("mode-switch");
+    
+            // Applique le mode sombre si l'état précédent était sombre
+            if (darkMode === "true") {
+                element.classList.add("dark-mode");
+                button.innerHTML = '<i class="fa fa-sun-o"></i> Day Mode';
+            }
+        };
+    </script>
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+

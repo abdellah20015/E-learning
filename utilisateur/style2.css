@@ -1,0 +1,34 @@
+<style>
+/* Styles pour le bouton “Next” */
+#next {
+    /* Couleur de fond du bouton */
+    background-color: #4CAF50;
+    
+    /* Couleur du texte du bouton */
+    color: white;
+    
+    /* Taille du texte du bouton */
+    font-size: 16px;
+    
+    /* Bordure du bouton */
+    border: none;
+    
+    /* Arrondissement des coins du bouton */
+    border-radius: 4px;
+    
+    /* Largeur du bouton */
+    width: 100px;
+    
+    /* Hauteur du bouton */
+    height: 40px;
+    
+    /* Curseur en forme de main au survol du bouton */
+    cursor: pointer;
+}
+
+/* Effet au survol du bouton */
+#next:hover {
+    /* Assombrissement de la couleur de fond du bouton */
+    background-color: #3A8E3A;
+}
+</style>

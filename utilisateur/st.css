@@ -1,0 +1,22 @@
+/* Sélectionner le bouton OK */
+button {
+    /* Changer la couleur de fond du bouton */
+    background-color: #7b38d8;
+    /* Changer la couleur du texte du bouton */
+    color: #eeeeee;
+    /* Ajouter une bordure arrondie au bouton */
+    border-radius: 10px;
+    /* Ajouter une bordure double au bouton */
+    border: 4px double #cccccc;
+    /* Ajouter du padding au bouton */
+    padding: 10px;
+    /* Changer la taille du texte du bouton */
+    font-size: 20px;
+  }
+  
+  /* Sélectionner le bouton OK au survol */
+  button:hover {
+    /* Changer la couleur de fond du bouton au survol */
+    background-color: green;
+  }
+  

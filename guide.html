@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>E-learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <header>
+        <div class="logo">
+            <a href="indice.html"><img src="logo.jpg" alt="Logo E-learning"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="indice.html"><i class="fa fa-home"></i> Accueil</a></li>
+                <li><a href="guide.html"><i class="fa fa-compass"></i> Guides</a></li>
+                <li><a href="propos.html"><i class="fa fa-info-circle"></i> A propos</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .profile-card {
+            width: 350px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .profile-card h1 {
+            font-size: 22px;
+            margin: 0;
+        }
+        .profile-card h2 {
+            font-size: 16px;
+            margin: 0;
+            color: #777;
+        }
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #f5efef;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <h1 style="text-align: center;">Admin et Créateur de site:</h1>
+        <img src="abdellah.jpeg" alt="Profile Photo">
+        <h2>Abdellah Agnaou</h2>
+        <h3><i class="fa fa-envelope"></i> abdellah.agnaou@um5r.ac.ma</h3>
+        <h3><i class="fa fa-phone"></i> +212 637 451 036</h3>
+    </div>
+    
+
+
+    <footer>
+        <p>© 2023 E-learning. Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a> <!-- Ajout de l'icône de LinkedIn -->
+        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a> <!-- Ajout de l'icône de Facebook -->
+        <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a> <!-- Ajout de l'icône de Instagram -->
+        <a href="mailto:abdellah.agnaou@um5r.ac.ma"><img src="email.png" alt="Email"></a> <!-- Ajout de l'icône de Email -->
+        <p><i class="fa fa-envelope"></i> Email : abdellah.agnaou@um5r.ac.ma</p> <!-- Ajout de l'adresse email -->
+        <p><i class="fa fa-map-marker"></i> Adresse : Faculté des sciences Rabat</p> <!-- Ajout de l'adresse -->
+        <p><i class="fa fa-phone"></i> Téléphone : +212 6 37 45 10 36</p> <!-- Ajout du numéro de téléphone -->
+    </footer>
+    <!-- Ajout d’un script pour rendre le site interactif -->
+    <!-- Ajout d’un script pour rendre le site interactif -->
+<script>
+    // Fonction pour basculer entre le mode sombre et le mode jour
+    function switchMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode"); // Ajoute ou supprime la classe dark-mode
+        var button = document.getElementById("mode-switch");
+
+        // Stocke l'état actuel du mode sombre dans le stockage local
+        localStorage.setItem("darkMode", element.classList.contains("dark-mode"));
+
+        // Met à jour le texte du bouton en fonction du mode sombre
+        if (element.classList.contains("dark-mode")) {
+            button.innerHTML = '<i class="fa fa-sun-o"></i> Day Mode';
+        } else {
+            button.innerHTML = '<i class="fa fa-moon-o"></i> Night Mode';
+        }
+    }
+
+    // Fonction pour charger l'état du mode sombre au chargement de la page
+    window.onload = function () {
+        var darkMode = localStorage.getItem("darkMode");
+        var element = document.body;
+        var button = document.getElementById("mode-switch");
+
+        // Applique le mode sombre si l'état précédent était sombre
+        if (darkMode === "true") {
+            element.classList.add("dark-mode");
+            button.innerHTML = '<i class="fa fa-sun-o"></i> Day Mode';
+        }
+    };
+</script>
+
+
+<script type="text/javascript">
+    // Function to initialize the Google Translate Element
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'fr',
+            includedLanguages: 'ar,en,es,fr',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+
+    // Function to trigger translation
+    function translatePage(languageCode) {
+        var translateElement = new google.translate.TranslateElement({});
+        translateElement.getPageLanguage = function () { return 'fr'; }; // Set the source language
+
+        // Trigger translation to the selected language
+        translateElement.showWidget({
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+            multilanguagePage: true,
+            pageLanguage: languageCode
+        });
+    }
+</script>
+<script>
+function login() {
+    // Récupérer le nom d'utilisateur et le mot de passe à partir d'un formulaire
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Vérifier les informations d'identification de l'utilisateur
+    if (username == "user" && password == "password") {
+        // Si les informations d'identification sont correctes, stocker l'utilisateur dans la session
+        sessionStorage.setItem("username", username);
+        
+        // Rediriger l'utilisateur vers la page d'accueil
+        window.location.href = "indice.html";
+    } else {
+        // Si les informations d'identification sont incorrectes, afficher un message d'erreur
+        alert("Nom d'utilisateur ou mot de passe incorrect !");
+    }
+}
+
+
+</script>
+</head>
+<body>
+<!-- Your existing body content here -->
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="heure.js"></script>
+    <script src="s.js"></script>
+    <script src="script1.js"></script>
+    
+    
+    
+    
+    
+</body>
+</html>

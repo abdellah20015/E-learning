@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="icon/contactus.png" type="image/icon type">
+    <body style="background-image: url('AA.jpg');"></body>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.php"><img src="logo.jpg" alt="Logo E-learning"></a> <!-- Ajout du lien vers la page d'accueil -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php"><i class="fa fa-home"></i> Accueil</a></li>
+                <li><a href="cours.html"><i class="fa fa-book"></i> Cours</a></li>
+                <li><a href="exercices.html"><i class="fa fa-pencil"></i> Exercices</a></li>
+                <li><a href="meeting.html"><i class="fa fa-users"></i> Meeting</a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <style>
+            button {
+            /* Changer la couleur de fond du bouton */
+            background-color: #343336;
+            /* Changer la couleur du texte du bouton */
+            color: #eeeeee;
+            /* Ajouter une bordure arrondie au bouton */
+            border-radius: 10px;
+            /* Ajouter une bordure double au bouton */
+            border: 4px double #cccccc;
+            /* Ajouter du padding au bouton */
+            padding: 10px;
+            /* Changer la taille du texte du bouton */
+            font-size: 20px;
+          }
+          
+          /* Sélectionner le bouton OK au survol */
+          button:hover {
+            /* Changer la couleur de fond du bouton au survol */
+            background-color: green;
+          }
+        
+            </style>
+            
+            <style>
+                .field {
+            margin-bottom: 20px;
+        }
+        
+        .field label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .field input[type="submit"],
+        .field input[type="reset"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .field input[type="submit"]:hover,
+        .field input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        
+            </style>
+        
+        <style>
+            body.dark-mode {
+        background-color: #222;
+        color: #fff;
+    }
+    
+    .button, #mode-switch {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        color: #fff;
+        background-color: #050505;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 15px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .button:hover, #mode-switch:hover {
+        background-color: #161816;
+    }
+    
+    .button .fa, #mode-switch .fa {
+        margin-right: 5px;
+    }
+    
+    #mode-switch {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background-color: #000;
+        color: #fff;
+    }
+    
+        </style>
+
+
+
+
+        <h1>Contact</h1>
+        <p>Si vous avez des questions ou des suggestions, n'hésitez pas à nous contacter.</p>
+        <main>
+            <form id="form" method="post" action="contact.php">
+                <div class="field">
+                    <label for="nom"><i class="fa fa-user"></i> Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="field">
+                    <label for="email"><i class="fa fa-envelope"></i> Email :</label>
+                 
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="field">
+                    <label for="sujet"><i class="fa fa-tag"></i> Sujet :</label>
+                    <input type="text" id="sujet" name="sujet" required>
+                </div>
+                <div class="field">
+                    <label for="message"><i class="fa fa-comment"></i> Message :</label>
+                    <textarea id="message" name="message" rows="10" cols="105" required></textarea>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="&#xf1d8; Envoyer" class="button fa">
+                    <input type="reset" value="&#xf00d; Annuler" class="button fa" onclick="window.location.href='index.php'">
+                </div>
+            </form>
+        </main>
+    </main>
+    <footer>
+        <p>© 2023 E-learning. Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="LinkedIn"></a> <!-- Ajout de l'icône de LinkedIn -->
+        <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a> <!-- Ajout de l'icône de Facebook -->
+        <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a> <!-- Ajout de l'icône de Instagram -->
+        <a href="mailto:abdellah.agnaou@um5r.ac.ma"><img src="email.png" alt="Email"></a> <!-- Ajout de l'icône de Email -->
+        <p><i class="fa fa-envelope"></i> Email : abdellah.agnaou@um5r.ac.ma</p> <!-- Ajout de l'adresse email -->
+        <p><i class="fa fa-map-marker"></i> Adresse : Faculté des sciences Rabat</p> <!-- Ajout de l'adresse -->
+        <p><i class="fa fa-phone"></i> Téléphone : +212 6 37 45 10 36</p> <!-- Ajout du numéro de téléphone -->
+    </footer>
+    <script>
+        // Fonction pour basculer entre le mode sombre et le mode jour
+        function switchMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode"); // Ajoute ou supprime la classe dark-mode
+            var button = document.getElementById("mode-switch");
+    
+            // Stocke l'état actuel du mode sombre dans le stockage local
+            localStorage.setItem("darkMode", element.classList.contains("dark-mode"));
+    
+            // Met à jour le texte du bouton en fonction du mode sombre
+            if (element.classList.contains("dark-mode")) {
+                button.innerHTML = '<i class="fa fa-sun-o"></i> Day Mode';
+            } else {
+                button.innerHTML = '<i class="fa fa-moon-o"></i> Night Mode';
+            }
+        }
+    
+        // Fonction pour charger l'état du mode sombre au chargement de la page
+        window.onload = function () {
+            var darkMode = localStorage.getItem("darkMode");
+            var element = document.body;
+            var button = document.getElementById("mode-switch");
+    
+            // Applique le mode sombre si l'état précédent était sombre
+            if (darkMode === "true") {
+                element.classList.add("dark-mode");
+                button.innerHTML = '<i class="fa fa-sun-o"></i> Day Mode';
+            }
+        };
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
